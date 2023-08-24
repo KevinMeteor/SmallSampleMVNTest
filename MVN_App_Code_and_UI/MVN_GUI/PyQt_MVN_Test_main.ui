@@ -1,0 +1,1757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>624</width>
+    <height>939</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>601</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>235</red>
+          <green>235</green>
+          <blue>235</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>235</red>
+          <green>235</green>
+          <blue>235</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>235</red>
+          <green>235</green>
+          <blue>235</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>235</red>
+          <green>235</green>
+          <blue>235</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>235</red>
+          <green>235</green>
+          <blue>235</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>235</red>
+          <green>235</green>
+          <blue>235</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>235</red>
+          <green>235</green>
+          <blue>235</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>235</red>
+          <green>235</green>
+          <blue>235</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>235</red>
+          <green>235</green>
+          <blue>235</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QGroupBox {
+    font: bold; 
+	background-color: rgb(235, 235, 235);
+    border: 1px solid silver;
+    border-radius: 20px;
+    margin-top: 6px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 7px;
+    padding: 0px 5px 0px 5px;
+}</string>
+    </property>
+    <property name="title">
+     <string>輸入資料</string>
+    </property>
+    <widget class="QLineEdit" name="lineEdit_FromDataFile">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>421</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	border: 2px solid gray;
+	border-radius: 10px;
+	padding: 0 8px;
+	selection-background-color: darkgray;
+}</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_ChooseDist">
+     <property name="geometry">
+      <rect>
+       <x>356</x>
+       <y>130</y>
+       <width>211</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*  style for QcomboBox_ChooseDist */
+#comboBox_ChooseDist{
+	border: 1px solid ;
+	border-radius:14px;
+	padding-left: 10px;
+	 background-color:  rgb(238, 232, 169);
+		width: 197px;
+	height: 30px;
+	
+}
+
+/* style for drop down area */
+#comboBox_ChooseDist::drop-down{
+	border:0px;
+	border-radius:14px;
+}
+
+
+/* style for drop down arrow */ 
+#comboBox_ChooseDist::down-arrow{
+	image: url(./MVN_GUI/down_7344919.png);
+	width: 12px;
+	height: 12px;
+	margin-right: 15px;
+}
+
+
+
+/* style for QComboBox_ChooseDist after open select menu */ 
+#comboBox_ChooseDist:on{
+	border: 4px solid  #FFEECA;
+
+}
+
+
+/* style for list menu */
+#comboBox_ChooseDist  QListView{
+	font-size:20px;
+	border: 1px solid rgb(0, 0, 0);
+	padding: 5px;
+	background-color:  rgb(238, 232, 169);
+	outline: 0px;
+	border-radius: 14px;
+}
+
+
+
+#comboBox_ChooseDist:hover{
+       background-color:#EEB900;
+        border-radius: 14px; 
+ border: 2px groove gray;
+ }
+
+</string>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <property name="maxVisibleItems">
+      <number>8</number>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+     </property>
+     <property name="minimumContentsLength">
+      <number>0</number>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>16</width>
+       <height>16</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string>請選擇分配</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>標準多變量常態分配</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>多變量 t(3) 分配</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>多變量 t(10) 分配</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_ImportData">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>161</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>從本機讀取資料</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_OpenFileData">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>50</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+
+background-color: rgb(238, 232, 169);
+       
+        border-radius: 14px;  border: 2px groove gray;
+        border-style: outset;
+
+}
+
+
+
+QPushButton:hover{
+       background-color:#EEB900;
+        border-radius: 11px;  border: 2px groove gray;
+        border-style: outset;
+ }</string>
+     </property>
+     <property name="text">
+      <string> 開啟</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>folder_861250.png</normaloff>folder_861250.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_GenerateData">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>98</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>使用模擬資料</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_VariableDim">
+     <property name="geometry">
+      <rect>
+       <x>113</x>
+       <y>130</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	border: 2px solid gray;
+	border-radius: 10px;
+	selection-background-color: darkgray;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_SampleSize">
+     <property name="geometry">
+      <rect>
+       <x>267</x>
+       <y>130</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	border: 2px solid gray;
+	border-radius: 10px;
+	selection-background-color: darkgray;
+}</string>
+     </property>
+     <property name="text">
+      <string>20</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>197</x>
+       <y>130</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>樣本數：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>130</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>變數個數：</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>601</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QGroupBox {
+    font: bold; 
+	background-color: rgb(235, 235, 235);
+    border: 1px solid silver;
+    border-radius: 20px;
+    margin-top: 6px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 7px;
+    padding: 0px 5px 0px 5px;
+}</string>
+    </property>
+    <property name="title">
+     <string>預檢資料</string>
+    </property>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>變數個數：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>30</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>樣本數：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Plot">
+     <property name="geometry">
+      <rect>
+       <x>438</x>
+       <y>31</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+
+background-color: rgb(238, 232, 169);
+       
+        border-radius: 14px;  border: 2px groove gray;
+        border-style: outset;
+
+}
+
+
+QPushButton:hover{
+       background-color:#EEB900;
+        border-radius: 11px;  border: 2px groove gray;
+        border-style: outset;
+ }</string>
+     </property>
+     <property name="text">
+      <string> 邊際分析</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>bar-chart_4858036.png</normaloff>bar-chart_4858036.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_PreviewVarDim">
+     <property name="geometry">
+      <rect>
+       <x>106</x>
+       <y>30</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_PreviewSampleSize">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>30</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>20</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>601</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QGroupBox {
+    font: bold; 
+	background-color: rgb(235, 235, 235);
+    border: 1px solid silver;
+    border-radius: 20px;
+    margin-top: 6px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 7px;
+    padding: 0px 5px 0px 5px;
+}</string>
+    </property>
+    <property name="title">
+     <string>檢定類型</string>
+    </property>
+    <widget class="QCheckBox" name="checkBox_MS_Test">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>221</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="acceptDrops">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*
+#checkBox_MS_Test {
+    spacing: 5px;
+}
+
+#checkBox_MS_Test::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+*/
+/*
+QCheckBox::indicator {
+   
+    width:33px;
+    height:33px;
+}
+*/
+
+/* Set syle for QCheckBox */
+QCheckBox{
+	spacing: 0px;
+	font-size: 16px;
+}
+
+/* Set size for QCheckBox indicator */ 
+QCheckBox::indicator {
+    width:25px;
+    height:25px;
+}
+
+/* Change font color when mouse is hover on QCheckBox */
+QCheckBox:hover{
+	color: #f00;
+	font: bold;
+}
+
+/* Set image for QCheckBox when it is UN-checked */
+QCheckBox::indicator:unchecked {
+   	image: url(./MVN_GUI/square-outline_58243.png);
+	width: 15px;
+	height: 15px;
+	margin-right: 15px;
+}
+
+
+
+/* Set image for QCheckBox unchecked when it is hover and pressed */
+/*
+QCheckBox::indicator:unchecked:hover,  QCheckBox::indicator:unchecked:pressed: {
+    image: url(./MVN_GUI/square-outline_58243.png);
+	width: 15px;
+	height: 15px;
+	margin-right: 15px;
+
+}
+*/
+
+/* Set image for QCheckBox when it is checked */
+QCheckBox::indicator:checked {
+   	image: url(./MVN_GUI/square-with-verification-sign_44796.png);
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+}
+
+
+/* Set image for QCheckBox checked when it is hover and pressed */
+/*
+QCheckBox::indicator:checked:hover,  QCheckBox::indicator:checked:pressed: {
+   	image: url(./MVN_GUI/square-with-verification-sign_44796.png);
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+
+}
+*/
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Mardia's Skewness (MS)</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>16</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_MK_Test">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>211</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*
+#checkBox_MS_Test {
+    spacing: 5px;
+}
+
+#checkBox_MS_Test::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+*/
+/*
+QCheckBox::indicator {
+   
+    width:33px;
+    height:33px;
+}
+*/
+
+/* Set syle for QCheckBox */
+QCheckBox{
+	spacing: 0px;
+	font-size: 16px;
+}
+
+/* Set size for QCheckBox indicator */ 
+QCheckBox::indicator {
+    width:25px;
+    height:25px;
+}
+
+/* Change font color when mouse is hover on QCheckBox */
+QCheckBox:hover{
+	color: #f00;
+	font: bold;
+}
+
+/* Set image for QCheckBox when it is UN-checked */
+QCheckBox::indicator:unchecked {
+   	image: url(./MVN_GUI/square-outline_58243.png);
+	width: 15px;
+	height: 15px;
+	margin-right: 15px;
+}
+
+
+
+/* Set image for QCheckBox unchecked when it is hover and pressed */
+/*
+QCheckBox::indicator:unchecked:hover,  QCheckBox::indicator:unchecked:pressed: {
+    image: url(./MVN_GUI/square-outline_58243.png);
+	width: 15px;
+	height: 15px;
+	margin-right: 15px;
+
+}
+*/
+
+/* Set image for QCheckBox when it is checked */
+QCheckBox::indicator:checked {
+   	image: url(./MVN_GUI/square-with-verification-sign_44796.png);
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+}
+
+
+/* Set image for QCheckBox checked when it is hover and pressed */
+/*
+QCheckBox::indicator:checked:hover,  QCheckBox::indicator:checked:pressed: {
+   	image: url(./MVN_GUI/square-with-verification-sign_44796.png);
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+
+}
+*/
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Mardia's Kurtosis (MK)</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_HZ_Test">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>100</y>
+       <width>211</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*
+#checkBox_MS_Test {
+    spacing: 5px;
+}
+
+#checkBox_MS_Test::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+*/
+/*
+QCheckBox::indicator {
+   
+    width:33px;
+    height:33px;
+}
+*/
+
+/* Set syle for QCheckBox */
+QCheckBox{
+	spacing: 0px;
+	font-size: 16px;
+}
+
+/* Set size for QCheckBox indicator */ 
+QCheckBox::indicator {
+    width:25px;
+    height:25px;
+}
+
+/* Change font color when mouse is hover on QCheckBox */
+QCheckBox:hover{
+	color: #f00;
+	font: bold;
+}
+
+/* Set image for QCheckBox when it is UN-checked */
+QCheckBox::indicator:unchecked {
+   	image: url(./MVN_GUI/square-outline_58243.png);
+	width: 15px;
+	height: 15px;
+	margin-right: 15px;
+}
+
+
+
+/* Set image for QCheckBox unchecked when it is hover and pressed */
+/*
+QCheckBox::indicator:unchecked:hover,  QCheckBox::indicator:unchecked:pressed: {
+    image: url(./MVN_GUI/square-outline_58243.png);
+	width: 15px;
+	height: 15px;
+	margin-right: 15px;
+
+}
+*/
+
+/* Set image for QCheckBox when it is checked */
+QCheckBox::indicator:checked {
+   	image: url(./MVN_GUI/square-with-verification-sign_44796.png);
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+}
+
+
+/* Set image for QCheckBox checked when it is hover and pressed */
+/*
+QCheckBox::indicator:checked:hover,  QCheckBox::indicator:checked:pressed: {
+   	image: url(./MVN_GUI/square-with-verification-sign_44796.png);
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+
+}
+*/
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Henze-Zirkler (HZ)</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_Wmin5_Test">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>130</y>
+       <width>211</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*
+#checkBox_MS_Test {
+    spacing: 5px;
+}
+
+#checkBox_MS_Test::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+*/
+/*
+QCheckBox::indicator {
+   
+    width:33px;
+    height:33px;
+}
+*/
+
+/* Set syle for QCheckBox */
+QCheckBox{
+	spacing: 0px;
+	font-size: 16px;
+}
+
+/* Set size for QCheckBox indicator */ 
+QCheckBox::indicator {
+    width:25px;
+    height:25px;
+}
+
+/* Change font color when mouse is hover on QCheckBox */
+QCheckBox:hover{
+	color: #f00;
+	font: bold;
+}
+
+/* Set image for QCheckBox when it is UN-checked */
+QCheckBox::indicator:unchecked {
+   	image: url(./MVN_GUI/square-outline_58243.png);
+	width: 15px;
+	height: 15px;
+	margin-right: 15px;
+}
+
+
+
+/* Set image for QCheckBox unchecked when it is hover and pressed */
+/*
+QCheckBox::indicator:unchecked:hover,  QCheckBox::indicator:unchecked:pressed: {
+    image: url(./MVN_GUI/square-outline_58243.png);
+	width: 15px;
+	height: 15px;
+	margin-right: 15px;
+
+}
+*/
+
+/* Set image for QCheckBox when it is checked */
+QCheckBox::indicator:checked {
+   	image: url(./MVN_GUI/square-with-verification-sign_44796.png);
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+}
+
+
+/* Set image for QCheckBox checked when it is hover and pressed */
+/*
+QCheckBox::indicator:checked:hover,  QCheckBox::indicator:checked:pressed: {
+   	image: url(./MVN_GUI/square-with-verification-sign_44796.png);
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+
+}
+*/
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Wmin(5)</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QComboBox" name="comboBox_alpha">
+    <property name="geometry">
+     <rect>
+      <x>161</x>
+      <y>650</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*  style for QcomboBox_alpha */
+#comboBox_alpha{
+	border: 1px solid ;
+	border-radius:14px;
+	padding-left: 10px;
+	 background-color:  rgb(238, 232, 169);
+		width: 197px;
+	height: 30px;
+}
+
+/* style for drop down area */
+#comboBox_alpha::drop-down{
+	border:0px;
+	border-radius:14px;
+}
+
+/* style for drop down arrow */ 
+#comboBox_alpha::down-arrow{
+	image: url(./MVN_GUI/down_7344919.png);
+	width: 12px;
+	height: 12px;
+	margin-right: 15px;
+}
+
+/* style for QComboBox_alpha after open select menu */ 
+#comboBox_alpha :on{
+	border: 4px solid  #ffeeca;
+}
+
+/* style for list menu */
+#comboBox_alpha QListView{
+	font-size:20px;
+	border: 1px solid rgb(0, 0, 0, 10%);
+	padding: 5px;
+	background-color:  rgb(238, 232, 169);
+	outline: 0px;
+	border-radius: 14px;
+}
+
+#comboBox_alpha:hover{
+       background-color:#EEB900;
+        border-radius: 14px; 
+ border: 2px groove gray;
+        border-style: outset;
+ }
+
+
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>0.05</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>0.01</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>0.10</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>41</x>
+      <y>650</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>顯著水準 &amp;alpha;：</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pBut_exit">
+    <property name="geometry">
+     <rect>
+      <x>253</x>
+      <y>845</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+background-color: rgb(238, 232, 169);
+       
+        border-radius:20px;  border: 2px groove gray;
+        border-style: outset;
+
+}
+
+
+QPushButton:hover{
+       background-color:#EEB900;
+        border-radius: 14px;  border: 2px groove gray;
+        border-style: outset;
+ }</string>
+    </property>
+    <property name="text">
+     <string> 關閉</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>close_5756234.png</normaloff>close_5756234.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView_DataView">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>190</y>
+      <width>541</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+selection-background-color: rgb(160, 136, 86);
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Compute">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>795</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+background-color: rgb(238, 232, 169);
+       
+        border-radius: 20px;  border: 2px groove gray;
+        border-style: outset;
+
+}
+
+
+
+QPushButton:hover{
+       background-color:#EEB900;
+        border-radius: 14px;  border: 2px groove gray;
+        border-style: outset;
+ }</string>
+    </property>
+    <property name="text">
+     <string> 檢定計算</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>play_7476990.png</normaloff>play_7476990.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_computeStatus">
+    <property name="geometry">
+     <rect>
+      <x>359</x>
+      <y>650</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>None</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Wmin5_CV_3">
+    <property name="geometry">
+     <rect>
+      <x>259</x>
+      <y>650</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>計算狀態：</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_Test">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>800</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#progressBar_Test {
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+	font-weight: bold;
+}
+
+QProgressBar::chunk {
+    background-color: #EEB900 ;
+    width: 10px;
+    margin: 0.5px;
+}</string>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QSlider" name="hSlider_N_per_for_loop">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>44</x>
+      <y>725</y>
+      <width>531</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider {
+        border-radius: 10px;
+ }
+
+QSlider::groove:horizontal {
+        height: 5px;
+        background: #000; 
+}
+QSlider::handle:horizontal{
+        background: #f00;
+        width: 16px;
+        height: 16px;
+		 margin:-6px 0;
+        border-radius:8px;
+ }
+
+/* #f90 #EEB900 #FFEECA */
+QSlider::sub-page:horizontal{
+        background: #EEB900 ;
+}
+
+QSlider::TicksBelow::horizontal{
+
+}</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>5</number>
+    </property>
+    <property name="pageStep">
+     <number>1</number>
+    </property>
+    <property name="value">
+     <number>3</number>
+    </property>
+    <property name="sliderPosition">
+     <number>3</number>
+    </property>
+    <property name="tracking">
+     <bool>true</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+    <property name="invertedControls">
+     <bool>false</bool>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+    <property name="tickInterval">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>44</x>
+      <y>755</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>755</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>275</x>
+      <y>755</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>395</x>
+      <y>755</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>1000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>512</x>
+      <y>755</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>10000</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>174</x>
+      <y>695</y>
+      <width>291</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>經驗臨界值模擬分次計算次數</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_computeMethod">
+    <property name="geometry">
+     <rect>
+      <x>487</x>
+      <y>649</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*  style for QcomboBox_computeMethod */
+#comboBox_computeMethod{
+	border: 1px solid ;
+	border-radius:14px;
+	padding-left: 10px;
+	 background-color:  rgb(238, 232, 169);
+		width: 197px;
+	height: 30px;
+}
+
+/* style for drop down area */
+#comboBox_computeMethod::drop-down{
+	border:0px;
+	border-radius:14px;
+}
+
+/* style for drop down arrow */ 
+#comboBox_computeMethod::down-arrow{
+	image: url(./MVN_GUI/down_7344919.png);
+	width: 12px;
+	height: 12px;
+	margin-right: 15px;
+}
+
+/* style for QComboBox_computeMethod after open select menu */ 
+#comboBox_computeMethod :on{
+	border: 4px solid  #ffeeca;
+}
+
+/* style for list menu */
+#comboBox_computeMethod QListView{
+	font-size:20px;
+	border: 1px solid rgb(0, 0, 0, 10%);
+	padding: 5px;
+	background-color:  rgb(238, 232, 169);
+	outline: 0px;
+	border-radius: 14px;
+}
+
+
+#comboBox_computeMethod:hover{
+       background-color:#EEB900;
+        border-radius: 14px; 
+ border: 2px groove gray;
+        border-style: outset;
+ }</string>
+    </property>
+    <property name="duplicatesEnabled">
+     <bool>false</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>GPU</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CPU</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>620</y>
+      <width>601</width>
+      <height>165</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QGroupBox {
+    font: bold; 
+	background-color: rgb(235, 235, 235);
+    border: 1px solid silver;
+    border-radius: 20px;
+    margin-top: 6px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 7px;
+    padding: 0px 5px 0px 5px;
+}</string>
+    </property>
+    <property name="title">
+     <string>顯著水準與計算方法</string>
+    </property>
+   </widget>
+   <zorder>groupBox_4</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>groupBox_2</zorder>
+   <zorder>groupBox_3</zorder>
+   <zorder>comboBox_alpha</zorder>
+   <zorder>label_6</zorder>
+   <zorder>pBut_exit</zorder>
+   <zorder>tableView_DataView</zorder>
+   <zorder>pushButton_Compute</zorder>
+   <zorder>label_computeStatus</zorder>
+   <zorder>label_Wmin5_CV_3</zorder>
+   <zorder>progressBar_Test</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_11</zorder>
+   <zorder>label_12</zorder>
+   <zorder>comboBox_computeMethod</zorder>
+   <zorder>hSlider_N_per_for_loop</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>624</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
