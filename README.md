@@ -20,7 +20,7 @@ requirements_for_pip_install_with_CUDA12.2_in_conda_env.txt 檔所示。
   
 修改 1e08 到更小的數值，直到所使用的計算設備可以承受的計算資料大小。
 
-
+論文連結：https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dnclcdr&s=id=%22111NTPU0337026%22.&searchmode=basic
 
 
 Icons in the APP are from https://www.freepik.com .
